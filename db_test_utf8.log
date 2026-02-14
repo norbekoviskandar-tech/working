@@ -1,0 +1,49 @@
+﻿node : [eval]:1
+At line:1 char:1
++ node -e \"try { requ
+ire('./src/lib/server-
+db').getDb(); 
+console.log(' ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: ([eval]:1:S   
+ tring) [], Remote    
+Exception
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+\try { require('./src/
+lib/server-db').getDb(
+); console.log('DB 
+SUCCESS'); } catch 
+(e) { 
+console.error('DB 
+FAILURE:', 
+e.message); console.er
+ror(e.stack); 
+process.exit(1); }"
+^
+Expected unicode 
+escape
+
+SyntaxError: Invalid 
+or unexpected token
+    at 
+makeContextifyScript (
+node:internal/vm:194:1
+4)
+    at compileScript (
+node:internal/process/
+execution:388:10)
+    at evalTypeScript 
+(node:internal/process
+/execution:260:22)
+    at node:internal/m
+ain/eval_string:71:3
+
+Node.js v24.12.0
